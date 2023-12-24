@@ -308,6 +308,24 @@
     .about-col-1 img{
         visibility: hidden;
     }
+    /* .about-col-1, .about-col-2{
+        flex-basis: 100%;
+        font-size: 20px;
+        padding-left: -10px;
+
+    } */
+    #about{
+        /* padding-top: -300px; */
+        margin-top: -150%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    
 }
 
 .page-header {
@@ -489,6 +507,7 @@
     }
     .about-col-2{
         font-size: 14px;
+        margin-right: 5px;
     }
     .btn{
         font-size: 18px;
@@ -497,8 +516,8 @@
         text-align: center;
     }
     .tab-links{
-        font-size: 16px;
-        margin-right: 8px;
+        font-size: 15px;
+        margin-right: 9px;
     }
 }
 
