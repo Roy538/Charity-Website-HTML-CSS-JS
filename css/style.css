@@ -327,6 +327,9 @@
     }
     
 }
+.text-dark{
+    font-size: 12px;
+}
 
 .page-header {
     padding-top: 12rem;
