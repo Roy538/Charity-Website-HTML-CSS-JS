@@ -82,6 +82,31 @@
 })(jQuery);
 
 
+// ---------------------NEW EVENTS-------------------------------
+var NewEventDate = new Date('Feb 14,2024 00:00:00').getTime();
+function countdownfunc(){
+    var presentDate = new Date().getTime();
+    var difference = NewEventDate - presentDate;
+
+    var sec = 1000;
+    var min = sec * 60;
+    var hour = min * 60;
+    var day = hour * 24;
+
+    var d = Math.floor(difference/(day))
+    var h = Math.floor((difference%(day))/(hour));
+    var m = Math.floor((difference%(hour))/(min));
+    var s = Math.floor((difference%(min))/(sec));
+
+    document.getElementById('count-d').innerHTML = d;
+    document.getElementById('count-h').innerHTML = h;
+    document.getElementById('count-m').innerHTML = m;
+    document.getElementById('count-s').innerHTML = s;
+}
+setInterval(() => {
+countdownfunc();
+},1000);
+
 // ===========================Newsletter===============================
     // const scriptURL = 'https://script.google.com/macros/s/AKfycby2VReSgjWfx7nqL8QiqH4GOC3DuaFYXLyQi7wrBJdQHaG3OM13lv-hj5RsM7_g2dOG/exec'
     // const form = document.forms['submit-to-google-sheet']
